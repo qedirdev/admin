@@ -68,14 +68,14 @@
 							</a>
 							<div class="d-flex order-lg-2 ml-auto">
 								<div class="dropdown profile-dropdown">
-									<a href="profile.html" class="nav-link pr-0 leading-none" data-toggle="dropdown">
+									<a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
 										<span>
 											<img src="../../assets/images/users/2.jpg" alt="img" class="avatar avatar-md brround">
 										</span>
 									</a>
 									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow animated">
 										<div class="text-center">
-											<a href="#" class="dropdown-item text-center user pb-0 font-weight-bold">Qədir</a>
+											<a href="profile.html" class="dropdown-item text-center user pb-0 font-weight-bold">Qədir</a>
 											<span class="text-center user-semi-title">qedirdev@gmail.com</span>
 											<div class="dropdown-divider"></div>
 										</div>
@@ -151,7 +151,7 @@
 										</a>
 									</li>
 									<li aria-haspopup="true">
-										<a href="cities.html" class="sub-icon">
+										<a href="cities.html" class="sub-icon active">
 											<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 22C6.49 22 2 17.51 2 12S6.49 2 12 2s10 4.04 10 9c0 3.31-2.69 6-6 6h-1.77c-.28 0-.5.22-.5.5 0 .12.05.23.13.33.41.47.64 1.06.64 1.67 0 1.38-1.12 2.5-2.5 2.5zm0-18c-4.41 0-8 3.59-8 8s3.59 8 8 8c.28 0 .5-.22.5-.5 0-.16-.08-.28-.14-.35-.41-.46-.63-1.05-.63-1.65 0-1.38 1.12-2.5 2.5-2.5H16c2.21 0 4-1.79 4-4 0-3.86-3.59-7-8-7z"/><circle cx="6.5" cy="11.5" r="1.5"/><circle cx="9.5" cy="7.5" r="1.5"/><circle cx="14.5" cy="7.5" r="1.5"/><circle cx="17.5" cy="11.5" r="1.5"/></svg>
 											Şəhərlər
 										</a>
@@ -175,52 +175,211 @@
 					 </div>
                 </div>
                 <!--/Horizontal-main -->
-                
-                				<!-- Hor-Content -->
-				<div class="hor-content main-content">
-					<div class="container">
 
+                <!-- Hor-Content -->
+                <div class="hor-content main-content">
+                    <div class="container">
+                        <!-- Cities-actions -->
+                        <div class="cities-actions mt-6 mb-6 d-flex align-items-center">
+                            <h4 class="actions-name mb-0">Şəhərlər</h4>
+                            <div class="act-btns ml-5">          
+                                <a href="#" class="btn btn-md btn-success  mr-2">Əlavə et</a>
+                                <a href="#" class="btn btn-md btn-danger">Toplu sil</a>
+                            </div>
+                        </div>
+                        <!-- End-cities-actions -->
 						<!--Page header-->
 						<div class="page-header">
 							<div class="page-leftheader">
-								<h4 class="page-title mb-0">Profil</h4>
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index.html"><i class="fe fe-layers mr-2 fs-14"></i>Ana Səhifə</a></li>
-									<li class="breadcrumb-item"><a href="#">Profil</a></li>
+									<li class="breadcrumb-item"><a href="index.html"><i class="fe fe-layout  mr-2 fs-14"></i>Ana Səhifə</a></li>
+									<li class="breadcrumb-item active" aria-current="page"><a href="#">Şəhərlər</a></li>
 								</ol>
 							</div>
 						</div>
-						<!--End Page header-->
-
-						<!--/app header-->
-						<div class="main-proifle pb-5">
-							<div class="row">
-								<div class="col-lg-8">
-									<div class="box-widget widget-user">
-										<div class="widget-user-image1 d-sm-flex">
-											<img alt="User Avatar" class="rounded-circle border p-0" src="../../assets/images/users/2.jpg">
-											<div class="mt-1 ml-lg-5">
-												<h4 class="pro-user-username mb-3 font-weight-bold">Qədir Hüseynov <i class="fa fa-check-circle text-success"></i></h4>
-												<ul class="mb-0 pro-details">
-													<li><span class="profile-icon"><i class="fe fe-globe"></i></span><span class="h6 mt-3">https://huseynov.com</span></li>
-													<li><span class="profile-icon"><i class="fe fe-mail"></i></span><span class="h6 mt-3">qedirdev@gmail.com</span></li>
-													<li><span class="profile-icon"><i class="fe fe-flag"></i></span><span class="h6 mt-3">Azərbaycan</span></li>
-													<li><span class="profile-icon"><i class="fe fe-phone-call"></i></span><span class="h6 mt-3">+994 70 245 46 46</span></li>
-												</ul>
+                        <!--End Page header-->
+                        
+                        <!-- Row -->
+						<div class="row">
+							<div class="col-md-12 col-lg-12">
+								<div class="card">
+									<div class="card-header">
+                                        <div class="form-group w-100">
+											<div class="input-group pt-4">
+                                                <div class="mr-3">
+                                                    <select class="form-control select2">
+                                                        <option>ID</option>
+                                                        <option>AZ</option>
+                                                        <option>EN</option>
+                                                        <option>RU</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mr-3">
+                                                    <select class="form-control select2">
+                                                        <option>CONTAINS</option>
+                                                    </select>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Axtarış...">
+												<span class="input-group-append">
+													<button class="btn btn-primary" type="button"><i class="fe fe-search"></i></button>
+												</span>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-4 col-md-auto">
-									<div class="text-lg-right btn-list mt-4 mt-lg-0">
-										<a href="editprofile.html" class="btn btn-primary">Redaktə Et</a>
+									<div class="card-body p-0">
+										<div class="table-responsive">
+											<table class="table table-bordered card-table table-vcenter text-nowrap">
+												<thead>
+													<tr>
+														<th>
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<th>AZ</th>
+														<th>ENG</th>
+                                                        <th>RU</th>
+                                                        <th class="w-15">Tədbirlər</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<td>İmişli</td>
+														<td>Imishli</td>
+                                                        <td>Имишли</td>
+                                                        <td>
+                                                            <div class="btn-list">
+                                                            <a href="#" class="btn btn-pill btn-sm btn-warning">Göstər</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-info">Düzəlt</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-danger">Sil</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+														<th scope="row">
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<td>İmişli</td>
+														<td>Imishli</td>
+                                                        <td>Имишли</td>
+                                                        <td>
+                                                            <div class="btn-list">
+                                                            <a href="#" class="btn btn-pill btn-sm btn-warning">Göstər</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-info">Düzəlt</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-danger">Sil</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+														<th scope="row">
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<td>İmişli</td>
+														<td>Imishli</td>
+                                                        <td>Имишли</td>
+                                                        <td>
+                                                            <div class="btn-list">
+                                                            <a href="#" class="btn btn-pill btn-sm btn-warning">Göstər</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-info">Düzəlt</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-danger">Sil</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+														<th scope="row">
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<td>İmişli</td>
+														<td>Imishli</td>
+                                                        <td>Имишли</td>
+                                                        <td>
+                                                            <div class="btn-list">
+                                                            <a href="#" class="btn btn-pill btn-sm btn-warning">Göstər</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-info">Düzəlt</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-danger">Sil</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+														<th scope="row">
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<td>İmişli</td>
+														<td>Imishli</td>
+                                                        <td>Имишли</td>
+                                                        <td>
+                                                            <div class="btn-list">
+                                                            <a href="#" class="btn btn-pill btn-sm btn-warning">Göstər</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-info">Düzəlt</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-danger">Sil</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+														<th scope="row">
+                                                            <label class="custom-control custom-checkbox mb-0">
+                                                                <input type="checkbox" class="custom-control-input" name="example-checkbox1" value="option1" checked>
+                                                                <span class="custom-control-label"></span>
+                                                            </label>
+                                                        </th>
+														<td>İmişli</td>
+														<td>Imishli</td>
+                                                        <td>Имишли</td>
+                                                        <td>
+                                                            <div class="btn-list">
+                                                            <a href="#" class="btn btn-pill btn-sm btn-warning">Göstər</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-info">Düzəlt</a>
+                                                            <a href="#" class="btn btn-pill btn-sm btn-danger">Sil</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+												</tbody>
+                                            </table>
+                                            <div class="row d-flex justify-content-between m-0 pt-3 pl-4 pr-4">
+                                                <div class="dataTables_info pt-2 " id="example_info" role="status" aria-live="polite">
+                                                    60 məlumatdan 1-10 arası məlumatlar göstərilir
+                                                </div>
+                                                <ul class="pagination">
+                                                    <li class="page-item page-prev disabled">
+                                                        <a class="page-link" href="#" tabindex="-1">Əvvəl</a>
+                                                    </li>
+                                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item page-next">
+                                                        <a class="page-link" href="#">Sonra</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-
-					</div>
-				</div><!-- End hor-content-->
+						<!-- End Row -->
+                    </div>
+                </div>
+                <!-- End-hor-content -->
 			</div>
 
 
