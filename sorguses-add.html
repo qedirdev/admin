@@ -10,7 +10,7 @@
 		<meta name="keywords" content="admin panel ui, user dashboard template, web application templates, premium admin templates, html css admin templates, premium admin templates, best admin template bootstrap 4, dark admin template, bootstrap 4 template admin, responsive admin template, bootstrap panel template, bootstrap simple dashboard, html web app template, bootstrap report template, modern admin template, nice admin template"/>
 
 		<!-- Title -->
-		<title>Şəhərlərə bax</title>
+		<title>Sorğu əlavə et</title>
 
 		<!--Favicon -->
 		<link rel="icon" href="../../assets/images/brand/favicon.ico" type="image/x-icon"/>
@@ -115,7 +115,7 @@
 										</a>
 									</li>
 									<li aria-haspopup="true">
-										<a href="sorguses.html" class="sub-icon">
+										<a href="sorguses.html" class="sub-icon active">
 											<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 23.59v-3.6c-5.01-.26-9-4.42-9-9.49C2 5.26 6.26 1 11.5 1S21 5.26 21 10.5c0 4.95-3.44 9.93-8.57 12.4l-1.43.69zM11.5 3C7.36 3 4 6.36 4 10.5S7.36 18 11.5 18H13v2.3c3.64-2.3 6-6.08 6-9.8C19 6.36 15.64 3 11.5 3zm-1 11.5h2v2h-2zm2-1.5h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/></svg>
 											Sorğular
 										</a>
@@ -127,7 +127,7 @@
 										</a>
 									</li>
 									<li aria-haspopup="true">
-										<a href="#" class="sub-icon active">
+										<a href="deal-types.html" class="sub-icon">
 											<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
 											Ərazilər <i class="fa fa-angle-down horizontal-icon"></i>
 										</a>
@@ -139,7 +139,7 @@
 										</ul>
 									</li>
 									<li aria-haspopup="true">
-										<a href="deal-types.html" class="sub-icon">
+										<a href="#" class="sub-icon">
 											<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
 											Razılaşmalar
 										</a>
@@ -157,12 +157,7 @@
                     <div class="container">
                         <!-- Cities-actions -->
                         <div class="cities-actions mt-6 mb-6 d-flex align-items-center">
-                            <h4 class="actions-name mb-0">Şəhərlər göstərilir</h4>
-                            <div class="act-btns ml-5">          
-                                <a href="cities-edit.html" class="btn btn-md btn-info  mr-2">Düzəliş et</a>
-                                <a href="#" class="btn btn-md btn-danger mr-2">Toplu sil</a>
-                                <a href="cities.html" class="btn btn-md btn-warning">Siyahıya qayıt</a>
-                            </div>
+                            <h4 class="actions-name mb-0">Sorğu Əlavə Et</h4>
                         </div>
                         <!-- End-cities-actions -->
 						<!--Page header-->
@@ -170,59 +165,166 @@
 							<div class="page-leftheader">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index.html"><i class="fe fe-home  mr-2 fs-14"></i>Ana Səhifə</a></li>
-									<li class="breadcrumb-item" aria-current="page"><a href="cities.html">Şəhərlər</a></li>
-									<li class="breadcrumb-item active" aria-current="page"><a href="#">Göstərilir</a></li>
+									<li class="breadcrumb-item" aria-current="page"><a href="sorguses.html">Sorğular</a></li>
+									<li class="breadcrumb-item active" aria-current="page"><a href="#">Əlavə et</a></li>
 								</ol>
 							</div>
 						</div>
                         <!--End Page header-->
                         
-							<!-- Row -->
-							<div class="row">
-								<div class="col-lg-4 col-md-6 col-sm-12">
-									<div class="card">
-										<div class="card-header">
-											<h4 class="card-title">AZ</h4>
-										</div>
-										<div class="card-body">
-											<div class="">
-												<div class="form-group">
-                                                    İmişli
-												</div>
-											</div>
-										</div>
+						<form action="">
+						<!-- Row -->
+						<div class="row">
+                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header border-0">
+                                        <h3 class="card-title">Status</h3>
+                                    </div>
+                                    <div class="form-group ml-4">
+                                        <label class="custom-switch">
+                                            <span class="custom-switch-description mr-2">Aktivdir</span>
+                                            <input type="radio" name="custom-switch-radio" class="custom-switch-input">
+                                            <span class="custom-switch-indicator custom-switch-indicator"></span>
+                                        </label>
+                                        <label class="custom-switch">
+                                            <span class="custom-switch-description mr-2">Deaktivdir</span>
+                                            <input type="radio" checked name="custom-switch-radio" class="custom-switch-input">
+                                            <span class="custom-switch-indicator custom-switch-indicator"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Razılaşma növləri</h4>
 									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12">
-									<div class="card">
-										<div class="card-header">
-											<h4 class="card-title">EN</h4>
-										</div>
-										<div class="card-body">
-											<div class="">
-												<div class="form-group">
-                                                    Imishli
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-4 col-md-6 col-sm-12">
-									<div class="card">
-										<div class="card-header">
-											<h4 class="card-title">RU</h4>
-										</div>
-										<div class="card-body">
-											<div class="">
-												<div class="form-group">
-                                                    Имишли
-												</div>
+									<div class="card-body">
+										<div class="">
+											<div class="form-group">
+												<label for="exampleInputEmail1" class="form-label">Razılaşma növləri</label>
+													<select class="form-control custom-select select2">
+														<option value="1">İcarə</option>
+														<option value="2">Gündəlik icarə</option>
+														<option value="3">Satmaq</option>
+														<option value="4">Kirayə</option>
+														<option value="5">Gündəlik kirayə</option>
+													</select>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<!-- End Row -->
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Əmlak növləri</h4>
+									</div>
+									<div class="card-body">
+										<div class="">
+											<div class="form-group">
+												<label for="exampleInputEmail1" class="form-label">Əmlak növləri</label>
+                                                <select class="form-control custom-select select2">
+                                                    <option value="1">Yeni mənzil</option>
+                                                    <option value="2">Köhnə mənzil</option>
+                                                    <option value="3">Ev</option>
+                                                    <option value="4">Torpaq</option>
+                                                    <option value="5">Ofis</option>
+                                                    <option value="6">Biznes ofisi</option>
+                                                    <option value="7">Qaraj</option>
+                                                    <option value="8">Obyekt</option>
+                                                    <option value="9">Anbar</option>
+                                                    <option value="10">Kafe/Restoran</option>
+                                                    <option value="11">Mənzil</option>
+                                                </select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">İstifadəçi</h4>
+									</div>
+									<div class="card-body">
+										<div class="">
+											<div class="form-group">
+												<label for="exampleInputEmail1" class="form-label">İstifadəçilər</label>
+                                                <select class="form-control custom-select select2">
+                                                    <option selected value="1">Qədir</option>
+                                                    <option value="2">Amil</option>
+                                                    <option value="3">Tural</option>
+                                                </select>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Şəhər</h4>
+									</div>
+									<div class="card-body">
+										<div class="">
+											<div class="form-group">
+                                                <label for="exampleInputEmail1" class="form-label">Şəhərlər</label>
+                                                <select class="form-control custom-select select2">
+                                                    <option value="1">Bakı</option>
+                                                    <option value="2">Sumqayıt</option>
+                                                    <option value="3">Tbilisi</option>
+                                                    <option value="4">Batumi</option>
+                                                    <option value="5">İstanbul</option>
+                                                    <option value="6">İzmir</option>
+                                                </select>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Ölkə</h4>
+									</div>
+									<div class="card-body">
+										<div class="">
+											<div class="form-group">
+                                                <label for="exampleInputEmail1" class="form-label">Ölkələr</label>
+                                                <select class="form-control custom-select select2">
+                                                    <option value="1">Azərbaycan</option>
+                                                    <option value="2">Türkiyə</option>
+                                                    <option value="3">Gürcüstan</option>
+                                                    <option value="4">Almaniya</option>
+                                                    <option value="5">Qazaxstan</option>
+                                                </select>
+											</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+								<div class="card">
+									<div class="card-header">
+										<h4 class="card-title">Tarix</h4>
+									</div>
+									<div class="card-body">
+										<div class="">
+                                            <div class="form-group">
+                                                <label class="form-label">Tarix</label>
+                                                <div>
+                                                    <input class="form-control" type="datetime-local" name="date">
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+								</div>
+                            </div>
+						</div>
+						<button type="submit" class="btn btn-info mb-4">Əlavə et</button>
+						<!-- End Row -->
+						</form>
                     </div>
                 </div>
                 <!-- End-hor-content -->

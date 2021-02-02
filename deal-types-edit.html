@@ -10,7 +10,7 @@
 		<meta name="keywords" content="admin panel ui, user dashboard template, web application templates, premium admin templates, html css admin templates, premium admin templates, best admin template bootstrap 4, dark admin template, bootstrap 4 template admin, responsive admin template, bootstrap panel template, bootstrap simple dashboard, html web app template, bootstrap report template, modern admin template, nice admin template"/>
 
 		<!-- Title -->
-		<title>Şəhərlərə bax</title>
+		<title>Razılaşma düzəlişi</title>
 
 		<!--Favicon -->
 		<link rel="icon" href="../../assets/images/brand/favicon.ico" type="image/x-icon"/>
@@ -127,7 +127,7 @@
 										</a>
 									</li>
 									<li aria-haspopup="true">
-										<a href="#" class="sub-icon active">
+										<a href="#" class="sub-icon">
 											<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
 											Ərazilər <i class="fa fa-angle-down horizontal-icon"></i>
 										</a>
@@ -139,7 +139,7 @@
 										</ul>
 									</li>
 									<li aria-haspopup="true">
-										<a href="deal-types.html" class="sub-icon">
+										<a href="deal-types.html" class="sub-icon active">
 											<svg class="hor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z"/></svg>
 											Razılaşmalar
 										</a>
@@ -157,12 +157,7 @@
                     <div class="container">
                         <!-- Cities-actions -->
                         <div class="cities-actions mt-6 mb-6 d-flex align-items-center">
-                            <h4 class="actions-name mb-0">Şəhərlər göstərilir</h4>
-                            <div class="act-btns ml-5">          
-                                <a href="cities-edit.html" class="btn btn-md btn-info  mr-2">Düzəliş et</a>
-                                <a href="#" class="btn btn-md btn-danger mr-2">Toplu sil</a>
-                                <a href="cities.html" class="btn btn-md btn-warning">Siyahıya qayıt</a>
-                            </div>
+							<h4 class="actions-name mb-0">Razılaşma növlərinin düzəlişi</h4>
                         </div>
                         <!-- End-cities-actions -->
 						<!--Page header-->
@@ -170,13 +165,14 @@
 							<div class="page-leftheader">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item"><a href="index.html"><i class="fe fe-home  mr-2 fs-14"></i>Ana Səhifə</a></li>
-									<li class="breadcrumb-item" aria-current="page"><a href="cities.html">Şəhərlər</a></li>
-									<li class="breadcrumb-item active" aria-current="page"><a href="#">Göstərilir</a></li>
+									<li class="breadcrumb-item" aria-current="page"><a href="deal-types.html">Razılaşma növləri düzəlişi</a></li>
+									<li class="breadcrumb-item active" aria-current="page"><a href="#">Düzəliş</a></li>
 								</ol>
 							</div>
 						</div>
                         <!--End Page header-->
                         
+						<form action="">
 							<!-- Row -->
 							<div class="row">
 								<div class="col-lg-4 col-md-6 col-sm-12">
@@ -186,9 +182,10 @@
 										</div>
 										<div class="card-body">
 											<div class="">
-												<div class="form-group">
-                                                    İmişli
-												</div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" class="form-label">AZ</label>
+                                                    <input value="Rent Out daily" type="text" class="form-control" id="exampleInputEmail1" placeholder="AZ">
+                                                </div>
 											</div>
 										</div>
 									</div>
@@ -200,9 +197,10 @@
 										</div>
 										<div class="card-body">
 											<div class="">
-												<div class="form-group">
-                                                    Imishli
-												</div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" class="form-label">EN</label>
+                                                    <input value="Rent Out daily" type="text" class="form-control" id="exampleInputEmail1" placeholder="EN">
+                                                </div>
 											</div>
 										</div>
 									</div>
@@ -214,15 +212,18 @@
 										</div>
 										<div class="card-body">
 											<div class="">
-												<div class="form-group">
-                                                    Имишли
-												</div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" class="form-label">RU</label>
+                                                    <input value="Rent Out daily" type="text" class="form-control" id="exampleInputEmail1" placeholder="RU">
+                                                </div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<!-- End Row -->
+                            </div>
+						    <button type="submit" class="btn btn-info mb-4">Düzəliş et</button>   
+                        </form>
+						<!-- End Row -->
                     </div>
                 </div>
                 <!-- End-hor-content -->
